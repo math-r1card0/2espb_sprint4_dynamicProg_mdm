@@ -1,0 +1,11 @@
+#*Tarefa 3: Interpretação do Resultado*
+
+#*Qual foi o menor caminho encontrado?*
+O menor caminho retornado pelo algoritmo foi: Lead -> Contato Inicial -> Reuniao -> Proposta -> Negociacao -> Confirmacao.
+
+#*Qual o custo total?*
+O custo total desse caminho é 5 (1 + 2 + 1 + 2 + 1 = 7).
+(Nota: Baseado nos pesos fictícios criados no dicionário Python).
+
+#*Por que esse fluxo é mais eficiente?*
+Embora esse caminho passe por todas as etapas disponíveis (mais "passos"), ele possui o menor atrito geral (menor peso acumulado). Em um cenário real de CRM, tentar "pular" etapas — como enviar uma Proposta sem antes fazer uma Reunião, ou tentar fechar a Confirmação sem passar pela Negociação — geralmente resulta em um esforço muito maior ou em negociações travadas (representado pelos pesos altos, como 5 ou 6 no grafo). Seguir o processo estruturado passo a passo demonstra ser o caminho de menor resistência, convertendo o Lead em Confirmação de forma mais fluida e com menor tempo/esforço total.
